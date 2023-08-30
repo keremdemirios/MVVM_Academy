@@ -113,7 +113,14 @@ class PersonFollowingTableViewCell: UITableViewCell {
         guard let viewModel = viewModel else {
             return
         }
-        delegate?.PersonFollowingTableViewCell(self, didTapWith: viewModel)
+        
+        var newViewModel = viewModel
+        newViewModel.currentlyFollowing = !viewModel.currentlyFollowing
+        
+        delegate?.PersonFollowingTableViewCell(self, didTapWith: newViewModel)
+        
+        prepareForReuse()
+        configure(with: newViewModel)
     }
     
     

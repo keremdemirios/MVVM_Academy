@@ -91,6 +91,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension ViewController: PersonFollowingTableViewCellDelegate {
     func PersonFollowingTableViewCell(_ cell: PersonFollowingTableViewCell, didTapWith viewModel: PersonFollowingTableViewCellViewModel) {
-        <#code#>
+        if viewModel.currentlyFollowing {
+            
+        }
     }
 }
