@@ -14,6 +14,8 @@
 		41F896A22A9F7DDE00766C40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41F896A02A9F7DDE00766C40 /* LaunchScreen.storyboard */; };
 		41F896AA2A9F86A100766C40 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F896A92A9F86A100766C40 /* PersonModel.swift */; };
 		41F896AC2A9F875300766C40 /* PersonFollowingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F896AB2A9F875300766C40 /* PersonFollowingTableViewCell.swift */; };
+		41F896AE2A9F905D00766C40 /* PersonFollowingTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F896AD2A9F905D00766C40 /* PersonFollowingTableViewCellViewModel.swift */; };
+		41F896B02A9F917700766C40 /* AddSubViews+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F896AF2A9F917700766C40 /* AddSubViews+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		41F896A32A9F7DDE00766C40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41F896A92A9F86A100766C40 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
 		41F896AB2A9F875300766C40 /* PersonFollowingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonFollowingTableViewCell.swift; sourceTree = "<group>"; };
+		41F896AD2A9F905D00766C40 /* PersonFollowingTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonFollowingTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		41F896AF2A9F917700766C40 /* AddSubViews+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddSubViews+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				41F896A32A9F7DDE00766C40 /* Info.plist */,
 				41F896A92A9F86A100766C40 /* PersonModel.swift */,
 				41F896AB2A9F875300766C40 /* PersonFollowingTableViewCell.swift */,
+				41F896AD2A9F905D00766C40 /* PersonFollowingTableViewCellViewModel.swift */,
+				41F896AF2A9F917700766C40 /* AddSubViews+Extensions.swift */,
 			);
 			path = "MVVM Academy";
 			sourceTree = "<group>";
@@ -141,10 +147,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				41F896AA2A9F86A100766C40 /* PersonModel.swift in Sources */,
+				41F896AE2A9F905D00766C40 /* PersonFollowingTableViewCellViewModel.swift in Sources */,
 				41F8969A2A9F7DD600766C40 /* ViewController.swift in Sources */,
 				41F896962A9F7DD600766C40 /* AppDelegate.swift in Sources */,
 				41F896AC2A9F875300766C40 /* PersonFollowingTableViewCell.swift in Sources */,
 				41F896982A9F7DD600766C40 /* SceneDelegate.swift in Sources */,
+				41F896B02A9F917700766C40 /* AddSubViews+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

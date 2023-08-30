@@ -79,10 +79,18 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: PersonFollowingTableViewCell.identifier, for: indexPath)
         let model = models[indexPath.row]
-        cell.textLabel?.text = model.name
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: PersonFollowingTableViewCell.identifier, for: indexPath) as? PersonFollowingTableViewCell else {
+            fatalError()
+        }
+        cell.configure(with: PersonFollowingTableViewCellViewModel(with: model))
+        cell.delegate = self
         return cell
     }
-    
+}
+
+extension ViewController: PersonFollowingTableViewCellDelegate {
+    func PersonFollowingTableViewCell(_ cell: PersonFollowingTableViewCell, didTapWith viewModel: PersonFollowingTableViewCellViewModel) {
+        <#code#>
+    }
 }
